@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7917BE7F1E3490B100055484 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BE7E1E3490B100055484 /* main.m */; };
+		7917BE821E3490B100055484 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BE811E3490B100055484 /* AppDelegate.m */; };
+		7917BE851E3490B100055484 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BE841E3490B100055484 /* ViewController.m */; };
+		7917BE881E3490B100055484 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7917BE861E3490B100055484 /* Main.storyboard */; };
+		7917BE8A1E3490B100055484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7917BE891E3490B100055484 /* Assets.xcassets */; };
+		7917BE8D1E3490B100055484 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7917BE8B1E3490B100055484 /* LaunchScreen.storyboard */; };
+		7917BE981E3490B100055484 /* WMCustomKeyBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BE971E3490B100055484 /* WMCustomKeyBoardTests.m */; };
+		7917BEA31E3490B100055484 /* WMCustomKeyBoardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEA21E3490B100055484 /* WMCustomKeyBoardUITests.m */; };
+		7917BECD1E34911900055484 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7917BEB11E34911900055484 /* LICENSE */; };
+		7917BECE1E34911900055484 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEB41E34911900055484 /* MASCompositeConstraint.m */; };
+		7917BECF1E34911900055484 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEB71E34911900055484 /* MASConstraint.m */; };
+		7917BED01E34911900055484 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEB91E34911900055484 /* MASConstraintMaker.m */; };
+		7917BED11E34911900055484 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEBB1E34911900055484 /* MASLayoutConstraint.m */; };
+		7917BED21E34911900055484 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEBF1E34911900055484 /* MASViewAttribute.m */; };
+		7917BED31E34911900055484 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEC11E34911900055484 /* MASViewConstraint.m */; };
+		7917BED41E34911900055484 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEC31E34911900055484 /* NSArray+MASAdditions.m */; };
+		7917BED51E34911900055484 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEC61E34911900055484 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		7917BED61E34911900055484 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEC81E34911900055484 /* View+MASAdditions.m */; };
+		7917BED71E34911900055484 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BECB1E34911900055484 /* ViewController+MASAdditions.m */; };
+		7917BED81E34911900055484 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 7917BECC1E34911900055484 /* README.md */; };
+		7917BEFF1E34917C00055484 /* draw.json in Resources */ = {isa = PBXBuildFile; fileRef = 7917BEDA1E34917C00055484 /* draw.json */; };
+		7917BF001E34917C00055484 /* EmojiToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEDE1E34917C00055484 /* EmojiToolBar.m */; };
+		7917BF011E34917C00055484 /* EmojiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEE11E34917C00055484 /* EmojiCell.m */; };
+		7917BF021E34917C00055484 /* EmojiCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEE31E34917C00055484 /* EmojiCollectionView.m */; };
+		7917BF031E34917C00055484 /* SinglePageEmojiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEE51E34917C00055484 /* SinglePageEmojiCell.m */; };
+		7917BF041E34917C00055484 /* WMEmojiKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEE71E34917C00055484 /* WMEmojiKeyboard.m */; };
+		7917BF051E34917C00055484 /* WMEmojiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEE91E34917C00055484 /* WMEmojiManager.m */; };
+		7917BF061E34917C00055484 /* WMEmotionAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEEC1E34917C00055484 /* WMEmotionAttachment.m */; };
+		7917BF071E34917C00055484 /* WMEmotionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEEE1E34917C00055484 /* WMEmotionModel.m */; };
+		7917BF081E34917C00055484 /* ExpandingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEF21E34917C00055484 /* ExpandingCell.m */; };
+		7917BF091E34917C00055484 /* WMInputBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEF41E34917C00055484 /* WMInputBar.m */; };
+		7917BF0A1E34917C00055484 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7917BEF51E34917C00055484 /* Media.xcassets */; };
+		7917BF0B1E34917C00055484 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7917BEF61E34917C00055484 /* Resources.bundle */; };
+		7917BF0C1E34917C00055484 /* small.json in Resources */ = {isa = PBXBuildFile; fileRef = 7917BEF71E34917C00055484 /* small.json */; };
+		7917BF0D1E34917C00055484 /* UIColor+MyColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEFA1E34917C00055484 /* UIColor+MyColor.m */; };
+		7917BF0E1E34917C00055484 /* UIFont+MyFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEFC1E34917C00055484 /* UIFont+MyFont.m */; };
+		7917BF0F1E34917C00055484 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BEFE1E34917C00055484 /* UIView+Frame.m */; };
+		7917BF121E34925300055484 /* UIButton+WMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917BF111E34925300055484 /* UIButton+WMAdditions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7917BE941E3490B100055484 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7917BE721E3490B100055484 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7917BE791E3490B100055484;
+			remoteInfo = WMCustomKeyBoard;
+		};
+		7917BE9F1E3490B100055484 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7917BE721E3490B100055484 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7917BE791E3490B100055484;
+			remoteInfo = WMCustomKeyBoard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7917BE7A1E3490B100055484 /* WMCustomKeyBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMCustomKeyBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7917BE7E1E3490B100055484 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7917BE801E3490B100055484 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7917BE811E3490B100055484 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7917BE831E3490B100055484 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7917BE841E3490B100055484 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7917BE871E3490B100055484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7917BE891E3490B100055484 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7917BE8C1E3490B100055484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7917BE8E1E3490B100055484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7917BE931E3490B100055484 /* WMCustomKeyBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WMCustomKeyBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7917BE971E3490B100055484 /* WMCustomKeyBoardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMCustomKeyBoardTests.m; sourceTree = "<group>"; };
+		7917BE991E3490B100055484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7917BE9E1E3490B100055484 /* WMCustomKeyBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WMCustomKeyBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7917BEA21E3490B100055484 /* WMCustomKeyBoardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMCustomKeyBoardUITests.m; sourceTree = "<group>"; };
+		7917BEA41E3490B100055484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7917BEB11E34911900055484 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7917BEB31E34911900055484 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		7917BEB41E34911900055484 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		7917BEB51E34911900055484 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		7917BEB61E34911900055484 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		7917BEB71E34911900055484 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		7917BEB81E34911900055484 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		7917BEB91E34911900055484 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		7917BEBA1E34911900055484 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		7917BEBB1E34911900055484 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		7917BEBC1E34911900055484 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		7917BEBD1E34911900055484 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		7917BEBE1E34911900055484 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		7917BEBF1E34911900055484 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		7917BEC01E34911900055484 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		7917BEC11E34911900055484 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		7917BEC21E34911900055484 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		7917BEC31E34911900055484 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		7917BEC41E34911900055484 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		7917BEC51E34911900055484 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		7917BEC61E34911900055484 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		7917BEC71E34911900055484 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		7917BEC81E34911900055484 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		7917BEC91E34911900055484 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		7917BECA1E34911900055484 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		7917BECB1E34911900055484 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		7917BECC1E34911900055484 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7917BEDA1E34917C00055484 /* draw.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = draw.json; sourceTree = "<group>"; };
+		7917BEDD1E34917C00055484 /* EmojiToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiToolBar.h; sourceTree = "<group>"; };
+		7917BEDE1E34917C00055484 /* EmojiToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiToolBar.m; sourceTree = "<group>"; };
+		7917BEE01E34917C00055484 /* EmojiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiCell.h; sourceTree = "<group>"; };
+		7917BEE11E34917C00055484 /* EmojiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiCell.m; sourceTree = "<group>"; };
+		7917BEE21E34917C00055484 /* EmojiCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiCollectionView.h; sourceTree = "<group>"; };
+		7917BEE31E34917C00055484 /* EmojiCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiCollectionView.m; sourceTree = "<group>"; };
+		7917BEE41E34917C00055484 /* SinglePageEmojiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinglePageEmojiCell.h; sourceTree = "<group>"; };
+		7917BEE51E34917C00055484 /* SinglePageEmojiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinglePageEmojiCell.m; sourceTree = "<group>"; };
+		7917BEE61E34917C00055484 /* WMEmojiKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMEmojiKeyboard.h; sourceTree = "<group>"; };
+		7917BEE71E34917C00055484 /* WMEmojiKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMEmojiKeyboard.m; sourceTree = "<group>"; };
+		7917BEE81E34917C00055484 /* WMEmojiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMEmojiManager.h; sourceTree = "<group>"; };
+		7917BEE91E34917C00055484 /* WMEmojiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMEmojiManager.m; sourceTree = "<group>"; };
+		7917BEEB1E34917C00055484 /* WMEmotionAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMEmotionAttachment.h; sourceTree = "<group>"; };
+		7917BEEC1E34917C00055484 /* WMEmotionAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMEmotionAttachment.m; sourceTree = "<group>"; };
+		7917BEED1E34917C00055484 /* WMEmotionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMEmotionModel.h; sourceTree = "<group>"; };
+		7917BEEE1E34917C00055484 /* WMEmotionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMEmotionModel.m; sourceTree = "<group>"; };
+		7917BEEF1E34917C00055484 /* WMHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMHeader.h; sourceTree = "<group>"; };
+		7917BEF11E34917C00055484 /* ExpandingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandingCell.h; sourceTree = "<group>"; };
+		7917BEF21E34917C00055484 /* ExpandingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandingCell.m; sourceTree = "<group>"; };
+		7917BEF31E34917C00055484 /* WMInputBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMInputBar.h; sourceTree = "<group>"; };
+		7917BEF41E34917C00055484 /* WMInputBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMInputBar.m; sourceTree = "<group>"; };
+		7917BEF51E34917C00055484 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		7917BEF61E34917C00055484 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
+		7917BEF71E34917C00055484 /* small.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = small.json; sourceTree = "<group>"; };
+		7917BEF91E34917C00055484 /* UIColor+MyColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MyColor.h"; sourceTree = "<group>"; };
+		7917BEFA1E34917C00055484 /* UIColor+MyColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MyColor.m"; sourceTree = "<group>"; };
+		7917BEFB1E34917C00055484 /* UIFont+MyFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+MyFont.h"; sourceTree = "<group>"; };
+		7917BEFC1E34917C00055484 /* UIFont+MyFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+MyFont.m"; sourceTree = "<group>"; };
+		7917BEFD1E34917C00055484 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		7917BEFE1E34917C00055484 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		7917BF101E34925300055484 /* UIButton+WMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WMAdditions.h"; sourceTree = "<group>"; };
+		7917BF111E34925300055484 /* UIButton+WMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WMAdditions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7917BE771E3490B100055484 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7917BE901E3490B100055484 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7917BE9B1E3490B100055484 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7917BE711E3490B100055484 = {
+			isa = PBXGroup;
+			children = (
+				7917BE7C1E3490B100055484 /* WMCustomKeyBoard */,
+				7917BE961E3490B100055484 /* WMCustomKeyBoardTests */,
+				7917BEA11E3490B100055484 /* WMCustomKeyBoardUITests */,
+				7917BE7B1E3490B100055484 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7917BE7B1E3490B100055484 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7917BE7A1E3490B100055484 /* WMCustomKeyBoard.app */,
+				7917BE931E3490B100055484 /* WMCustomKeyBoardTests.xctest */,
+				7917BE9E1E3490B100055484 /* WMCustomKeyBoardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7917BE7C1E3490B100055484 /* WMCustomKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				7917BED91E34917C00055484 /* WMEmoji */,
+				7917BEB01E34911900055484 /* Masonry */,
+				7917BE801E3490B100055484 /* AppDelegate.h */,
+				7917BE811E3490B100055484 /* AppDelegate.m */,
+				7917BE831E3490B100055484 /* ViewController.h */,
+				7917BE841E3490B100055484 /* ViewController.m */,
+				7917BE861E3490B100055484 /* Main.storyboard */,
+				7917BE891E3490B100055484 /* Assets.xcassets */,
+				7917BE8B1E3490B100055484 /* LaunchScreen.storyboard */,
+				7917BE8E1E3490B100055484 /* Info.plist */,
+				7917BE7D1E3490B100055484 /* Supporting Files */,
+			);
+			path = WMCustomKeyBoard;
+			sourceTree = "<group>";
+		};
+		7917BE7D1E3490B100055484 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7917BE7E1E3490B100055484 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7917BE961E3490B100055484 /* WMCustomKeyBoardTests */ = {
+			isa = PBXGroup;
+			children = (
+				7917BE971E3490B100055484 /* WMCustomKeyBoardTests.m */,
+				7917BE991E3490B100055484 /* Info.plist */,
+			);
+			path = WMCustomKeyBoardTests;
+			sourceTree = "<group>";
+		};
+		7917BEA11E3490B100055484 /* WMCustomKeyBoardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7917BEA21E3490B100055484 /* WMCustomKeyBoardUITests.m */,
+				7917BEA41E3490B100055484 /* Info.plist */,
+			);
+			path = WMCustomKeyBoardUITests;
+			sourceTree = "<group>";
+		};
+		7917BEB01E34911900055484 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				7917BF101E34925300055484 /* UIButton+WMAdditions.h */,
+				7917BF111E34925300055484 /* UIButton+WMAdditions.m */,
+				7917BEB11E34911900055484 /* LICENSE */,
+				7917BEB21E34911900055484 /* Masonry */,
+				7917BECC1E34911900055484 /* README.md */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		7917BEB21E34911900055484 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				7917BEB31E34911900055484 /* MASCompositeConstraint.h */,
+				7917BEB41E34911900055484 /* MASCompositeConstraint.m */,
+				7917BEB51E34911900055484 /* MASConstraint+Private.h */,
+				7917BEB61E34911900055484 /* MASConstraint.h */,
+				7917BEB71E34911900055484 /* MASConstraint.m */,
+				7917BEB81E34911900055484 /* MASConstraintMaker.h */,
+				7917BEB91E34911900055484 /* MASConstraintMaker.m */,
+				7917BEBA1E34911900055484 /* MASLayoutConstraint.h */,
+				7917BEBB1E34911900055484 /* MASLayoutConstraint.m */,
+				7917BEBC1E34911900055484 /* Masonry.h */,
+				7917BEBD1E34911900055484 /* MASUtilities.h */,
+				7917BEBE1E34911900055484 /* MASViewAttribute.h */,
+				7917BEBF1E34911900055484 /* MASViewAttribute.m */,
+				7917BEC01E34911900055484 /* MASViewConstraint.h */,
+				7917BEC11E34911900055484 /* MASViewConstraint.m */,
+				7917BEC21E34911900055484 /* NSArray+MASAdditions.h */,
+				7917BEC31E34911900055484 /* NSArray+MASAdditions.m */,
+				7917BEC41E34911900055484 /* NSArray+MASShorthandAdditions.h */,
+				7917BEC51E34911900055484 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				7917BEC61E34911900055484 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				7917BEC71E34911900055484 /* View+MASAdditions.h */,
+				7917BEC81E34911900055484 /* View+MASAdditions.m */,
+				7917BEC91E34911900055484 /* View+MASShorthandAdditions.h */,
+				7917BECA1E34911900055484 /* ViewController+MASAdditions.h */,
+				7917BECB1E34911900055484 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		7917BED91E34917C00055484 /* WMEmoji */ = {
+			isa = PBXGroup;
+			children = (
+				7917BEDA1E34917C00055484 /* draw.json */,
+				7917BEDB1E34917C00055484 /* EmojiKeyboard */,
+				7917BEEF1E34917C00055484 /* WMHeader.h */,
+				7917BEF01E34917C00055484 /* InputBar */,
+				7917BEF51E34917C00055484 /* Media.xcassets */,
+				7917BEF61E34917C00055484 /* Resources.bundle */,
+				7917BEF71E34917C00055484 /* small.json */,
+				7917BEF81E34917C00055484 /* Utils */,
+			);
+			name = WMEmoji;
+			path = HCEmoji;
+			sourceTree = "<group>";
+		};
+		7917BEDB1E34917C00055484 /* EmojiKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7917BEDC1E34917C00055484 /* EmojiToolBar */,
+				7917BEDF1E34917C00055484 /* EmojiView */,
+				7917BEE61E34917C00055484 /* WMEmojiKeyboard.h */,
+				7917BEE71E34917C00055484 /* WMEmojiKeyboard.m */,
+				7917BEE81E34917C00055484 /* WMEmojiManager.h */,
+				7917BEE91E34917C00055484 /* WMEmojiManager.m */,
+				7917BEEA1E34917C00055484 /* SunInfo */,
+			);
+			path = EmojiKeyboard;
+			sourceTree = "<group>";
+		};
+		7917BEDC1E34917C00055484 /* EmojiToolBar */ = {
+			isa = PBXGroup;
+			children = (
+				7917BEDD1E34917C00055484 /* EmojiToolBar.h */,
+				7917BEDE1E34917C00055484 /* EmojiToolBar.m */,
+			);
+			path = EmojiToolBar;
+			sourceTree = "<group>";
+		};
+		7917BEDF1E34917C00055484 /* EmojiView */ = {
+			isa = PBXGroup;
+			children = (
+				7917BEE01E34917C00055484 /* EmojiCell.h */,
+				7917BEE11E34917C00055484 /* EmojiCell.m */,
+				7917BEE21E34917C00055484 /* EmojiCollectionView.h */,
+				7917BEE31E34917C00055484 /* EmojiCollectionView.m */,
+				7917BEE41E34917C00055484 /* SinglePageEmojiCell.h */,
+				7917BEE51E34917C00055484 /* SinglePageEmojiCell.m */,
+			);
+			path = EmojiView;
+			sourceTree = "<group>";
+		};
+		7917BEEA1E34917C00055484 /* SunInfo */ = {
+			isa = PBXGroup;
+			children = (
+				7917BEEB1E34917C00055484 /* WMEmotionAttachment.h */,
+				7917BEEC1E34917C00055484 /* WMEmotionAttachment.m */,
+				7917BEED1E34917C00055484 /* WMEmotionModel.h */,
+				7917BEEE1E34917C00055484 /* WMEmotionModel.m */,
+			);
+			path = SunInfo;
+			sourceTree = "<group>";
+		};
+		7917BEF01E34917C00055484 /* InputBar */ = {
+			isa = PBXGroup;
+			children = (
+				7917BEF11E34917C00055484 /* ExpandingCell.h */,
+				7917BEF21E34917C00055484 /* ExpandingCell.m */,
+				7917BEF31E34917C00055484 /* WMInputBar.h */,
+				7917BEF41E34917C00055484 /* WMInputBar.m */,
+			);
+			path = InputBar;
+			sourceTree = "<group>";
+		};
+		7917BEF81E34917C00055484 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7917BEF91E34917C00055484 /* UIColor+MyColor.h */,
+				7917BEFA1E34917C00055484 /* UIColor+MyColor.m */,
+				7917BEFB1E34917C00055484 /* UIFont+MyFont.h */,
+				7917BEFC1E34917C00055484 /* UIFont+MyFont.m */,
+				7917BEFD1E34917C00055484 /* UIView+Frame.h */,
+				7917BEFE1E34917C00055484 /* UIView+Frame.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7917BE791E3490B100055484 /* WMCustomKeyBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7917BEA71E3490B100055484 /* Build configuration list for PBXNativeTarget "WMCustomKeyBoard" */;
+			buildPhases = (
+				7917BE761E3490B100055484 /* Sources */,
+				7917BE771E3490B100055484 /* Frameworks */,
+				7917BE781E3490B100055484 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WMCustomKeyBoard;
+			productName = WMCustomKeyBoard;
+			productReference = 7917BE7A1E3490B100055484 /* WMCustomKeyBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7917BE921E3490B100055484 /* WMCustomKeyBoardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7917BEAA1E3490B100055484 /* Build configuration list for PBXNativeTarget "WMCustomKeyBoardTests" */;
+			buildPhases = (
+				7917BE8F1E3490B100055484 /* Sources */,
+				7917BE901E3490B100055484 /* Frameworks */,
+				7917BE911E3490B100055484 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7917BE951E3490B100055484 /* PBXTargetDependency */,
+			);
+			name = WMCustomKeyBoardTests;
+			productName = WMCustomKeyBoardTests;
+			productReference = 7917BE931E3490B100055484 /* WMCustomKeyBoardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7917BE9D1E3490B100055484 /* WMCustomKeyBoardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7917BEAD1E3490B100055484 /* Build configuration list for PBXNativeTarget "WMCustomKeyBoardUITests" */;
+			buildPhases = (
+				7917BE9A1E3490B100055484 /* Sources */,
+				7917BE9B1E3490B100055484 /* Frameworks */,
+				7917BE9C1E3490B100055484 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7917BEA01E3490B100055484 /* PBXTargetDependency */,
+			);
+			name = WMCustomKeyBoardUITests;
+			productName = WMCustomKeyBoardUITests;
+			productReference = 7917BE9E1E3490B100055484 /* WMCustomKeyBoardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7917BE721E3490B100055484 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = LeiHui;
+				TargetAttributes = {
+					7917BE791E3490B100055484 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9G82B6ENVG;
+						ProvisioningStyle = Automatic;
+					};
+					7917BE921E3490B100055484 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7917BE791E3490B100055484;
+					};
+					7917BE9D1E3490B100055484 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7917BE791E3490B100055484;
+					};
+				};
+			};
+			buildConfigurationList = 7917BE751E3490B100055484 /* Build configuration list for PBXProject "WMCustomKeyBoard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7917BE711E3490B100055484;
+			productRefGroup = 7917BE7B1E3490B100055484 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7917BE791E3490B100055484 /* WMCustomKeyBoard */,
+				7917BE921E3490B100055484 /* WMCustomKeyBoardTests */,
+				7917BE9D1E3490B100055484 /* WMCustomKeyBoardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7917BE781E3490B100055484 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7917BE8D1E3490B100055484 /* LaunchScreen.storyboard in Resources */,
+				7917BE8A1E3490B100055484 /* Assets.xcassets in Resources */,
+				7917BF0B1E34917C00055484 /* Resources.bundle in Resources */,
+				7917BF0C1E34917C00055484 /* small.json in Resources */,
+				7917BECD1E34911900055484 /* LICENSE in Resources */,
+				7917BEFF1E34917C00055484 /* draw.json in Resources */,
+				7917BF0A1E34917C00055484 /* Media.xcassets in Resources */,
+				7917BE881E3490B100055484 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7917BE911E3490B100055484 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7917BE9C1E3490B100055484 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7917BE761E3490B100055484 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7917BF061E34917C00055484 /* WMEmotionAttachment.m in Sources */,
+				7917BED51E34911900055484 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				7917BED31E34911900055484 /* MASViewConstraint.m in Sources */,
+				7917BECE1E34911900055484 /* MASCompositeConstraint.m in Sources */,
+				7917BED41E34911900055484 /* NSArray+MASAdditions.m in Sources */,
+				7917BE851E3490B100055484 /* ViewController.m in Sources */,
+				7917BF021E34917C00055484 /* EmojiCollectionView.m in Sources */,
+				7917BF091E34917C00055484 /* WMInputBar.m in Sources */,
+				7917BF001E34917C00055484 /* EmojiToolBar.m in Sources */,
+				7917BF031E34917C00055484 /* SinglePageEmojiCell.m in Sources */,
+				7917BF041E34917C00055484 /* WMEmojiKeyboard.m in Sources */,
+				7917BE821E3490B100055484 /* AppDelegate.m in Sources */,
+				7917BED11E34911900055484 /* MASLayoutConstraint.m in Sources */,
+				7917BE7F1E3490B100055484 /* main.m in Sources */,
+				7917BF0D1E34917C00055484 /* UIColor+MyColor.m in Sources */,
+				7917BED71E34911900055484 /* ViewController+MASAdditions.m in Sources */,
+				7917BF081E34917C00055484 /* ExpandingCell.m in Sources */,
+				7917BF0E1E34917C00055484 /* UIFont+MyFont.m in Sources */,
+				7917BF051E34917C00055484 /* WMEmojiManager.m in Sources */,
+				7917BF011E34917C00055484 /* EmojiCell.m in Sources */,
+				7917BED61E34911900055484 /* View+MASAdditions.m in Sources */,
+				7917BF0F1E34917C00055484 /* UIView+Frame.m in Sources */,
+				7917BED81E34911900055484 /* README.md in Sources */,
+				7917BED21E34911900055484 /* MASViewAttribute.m in Sources */,
+				7917BECF1E34911900055484 /* MASConstraint.m in Sources */,
+				7917BF121E34925300055484 /* UIButton+WMAdditions.m in Sources */,
+				7917BED01E34911900055484 /* MASConstraintMaker.m in Sources */,
+				7917BF071E34917C00055484 /* WMEmotionModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7917BE8F1E3490B100055484 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7917BE981E3490B100055484 /* WMCustomKeyBoardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7917BE9A1E3490B100055484 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7917BEA31E3490B100055484 /* WMCustomKeyBoardUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7917BE951E3490B100055484 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7917BE791E3490B100055484 /* WMCustomKeyBoard */;
+			targetProxy = 7917BE941E3490B100055484 /* PBXContainerItemProxy */;
+		};
+		7917BEA01E3490B100055484 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7917BE791E3490B100055484 /* WMCustomKeyBoard */;
+			targetProxy = 7917BE9F1E3490B100055484 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7917BE861E3490B100055484 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7917BE871E3490B100055484 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7917BE8B1E3490B100055484 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7917BE8C1E3490B100055484 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7917BEA51E3490B100055484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7917BEA61E3490B100055484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7917BEA81E3490B100055484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9G82B6ENVG;
+				INFOPLIST_FILE = WMCustomKeyBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LeiHUi.WMCustomKeyBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7917BEA91E3490B100055484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9G82B6ENVG;
+				INFOPLIST_FILE = WMCustomKeyBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LeiHUi.WMCustomKeyBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7917BEAB1E3490B100055484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WMCustomKeyBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LeiHUi.WMCustomKeyBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WMCustomKeyBoard.app/WMCustomKeyBoard";
+			};
+			name = Debug;
+		};
+		7917BEAC1E3490B100055484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WMCustomKeyBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LeiHUi.WMCustomKeyBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WMCustomKeyBoard.app/WMCustomKeyBoard";
+			};
+			name = Release;
+		};
+		7917BEAE1E3490B100055484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WMCustomKeyBoardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LeiHUi.WMCustomKeyBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WMCustomKeyBoard;
+			};
+			name = Debug;
+		};
+		7917BEAF1E3490B100055484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WMCustomKeyBoardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LeiHUi.WMCustomKeyBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WMCustomKeyBoard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7917BE751E3490B100055484 /* Build configuration list for PBXProject "WMCustomKeyBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7917BEA51E3490B100055484 /* Debug */,
+				7917BEA61E3490B100055484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7917BEA71E3490B100055484 /* Build configuration list for PBXNativeTarget "WMCustomKeyBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7917BEA81E3490B100055484 /* Debug */,
+				7917BEA91E3490B100055484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7917BEAA1E3490B100055484 /* Build configuration list for PBXNativeTarget "WMCustomKeyBoardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7917BEAB1E3490B100055484 /* Debug */,
+				7917BEAC1E3490B100055484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7917BEAD1E3490B100055484 /* Build configuration list for PBXNativeTarget "WMCustomKeyBoardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7917BEAE1E3490B100055484 /* Debug */,
+				7917BEAF1E3490B100055484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7917BE721E3490B100055484 /* Project object */;
+}
